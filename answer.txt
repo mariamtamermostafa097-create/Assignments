@@ -1,0 +1,37 @@
+1- What is the difference between forEach and for...of? When would you use each?
+for of : it use break,continue,return
+it is used to loop through arrays 
+for  each : it cannot use break,return,continue
+is used to loop through all elements in an array 
+
+2- What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples?
+hoisting: means js moves declarations to the top before running the code 
+with var you get unfined  
+like 
+console.log(y);
+var x = 5;
+it run like 
+var y ;
+console.log(y)
+
+TDZ:the time before a let or const variable declared using it gives you error
+like 
+console.log(y);
+let y = 7
+gives you error
+
+3- What are the main differences between == and ===?
+==:compare only the value and can change data type. 
+===:compare value and data type.
+
+4- Explain how try-catch works and why it is important in async operations?
+it used to handle errors if it happen it try to block,the catch block runs
+it is important because it catches errors forom async/await and prevents the program from stopping
+
+5- What's the difference between type conversion and coercion? Provide examples of each?
+type coercion: When js changes data type automatically 
+like "5"+5= "55"
+number 5 changed automatically
+
+type conversion: when programmer changes the data type 
+like let str = string(456)
